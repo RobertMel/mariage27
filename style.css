@@ -1,0 +1,150 @@
+/* Police romantique */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff8f4;
+    color: #5c4d4d;
+}
+ 
+/* Section Save the Date */
+.save-the-date {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(145deg, #ffe0e0, #fff);
+}
+
+.save-the-date img {
+    max-width: 120px;
+    margin-bottom: 1rem;
+}
+
+.save-the-date h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #b77b7b;
+    margin-bottom: 0.5rem;
+}
+
+.save-the-date p {
+    font-size: 1.4rem;
+    color: #7d5a5a;
+}
+
+/* Section Countdown */
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background-color: #fff0f5;
+    border-radius: 20px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.time-unit {
+    background: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.time-unit span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #b77b7b;
+}
+
+.time-unit small {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #7d5a5a;
+}
+
+/* Section Présentation */
+.presentation {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.presentation img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+blockquote {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    color: #b77b7b;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Section Contact */
+.contact {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contact a {
+    color: #b77b7b;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #b77b7b;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact a:hover {
+    background: #b77b7b;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #ffe0e0;
+    border-top: 1px solid #f7caca;
+}
+
+footer img {
+    width: 60px;
+    margin-top: 1rem;
+}
+
+/* --- Responsive Mobile --- */
+@media (max-width: 768px) {
+    .countdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .time-unit span {
+        font-size: 3rem;
+    }
+
+    .save-the-date h1 {
+        font-size: 2.5rem;
+    }
+
+    blockquote {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .presentation img {
+        border-radius: 10px;
+    }
+}

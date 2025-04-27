@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soeur juliana & Y - Mariage</title>
+
+    <!-- Liens vers les polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Section Save the Date -->
+    <section class="save-the-date">
+        <img src="https://img.freepik.com/psd-gratuit/conception-cadre-coeur-floral_23-2151934505.jpg?semt=ais_hybrid&w=740" alt="Save the Date">
+        <h1>Save the Date</h1>
+        <p>Pour le mariage de<br><strong>soeur juliana & Y - Mariage</strong><br>01-05-2025</p>
+    </section>
+
+    <!-- Section Compte à Rebours -->
+    <section class="countdown">
+        <div class="time-unit">
+            <span id="days">0</span>
+            <small>JOURS</small>
+        </div>
+        <div class="time-unit">
+            <span id="hours">0</span>
+            <small>HEURES</small>
+        </div>
+        <div class="time-unit">
+            <span id="minutes">0</span>
+            <small>MINUTES</small>
+        </div>
+        <div class="time-unit">
+            <span id="seconds">0</span>
+            <small>SECONDES</small>
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section class="presentation">
+        <h2>Notre Histoire</h2>
+
+        <img src="https://cdn.generationvoyage.fr/2020/11/equipe-montpellier.jpg" alt="Montpellier" />
+
+        <blockquote>
+            <p>Oyez, nobles amis,</p>
+            <p>Entrez dans un conte où l'amour et la joie tissent les fils d'une journée Divine. Ici, le temps s'efface pour céder la place à la beauté d’un instant précieux. Vous êtes les témoins de notre amour.</p>
+        </blockquote>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Pour toute question, merci de contacter :</p>
+        <p>juliana : <a href="tel:0783236223">07 83 23 62 23</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Nid d'Hirondelle - BeNie 2025 - Avec Amour</p>
+        <img src="https://img.freepik.com/psd-gratuit/conception-cadre-coeur-floral_23-2151934505.jpg?semt=ais_hybrid&w=740" alt="Logo Nid d'Hirondelle">
+    </footer>
+
+    <!-- Script Compte à Rebours -->
+    <script>
+        const countdown = () => {
+            const countDate = new Date('May 1, 2025 00:00:00').getTime();
+            const now = new Date().getTime();
+            const gap = countDate - now;
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const days = Math.floor(gap / day);
+            const hours = Math.floor((gap % day) / hour);
+            const minutes = Math.floor((gap % hour) / minute);
+            const seconds = Math.floor((gap % minute) / second);
+
+            document.getElementById('days').innerText = days >= 0 ? days : 0;
+            document.getElementById('hours').innerText = hours >= 0 ? hours : 0;
+            document.getElementById('minutes').innerText = minutes >= 0 ? minutes : 0;
+            document.getElementById('seconds').innerText = seconds >= 0 ? seconds : 0;
+        };
+
+        setInterval(countdown, 1000);
+    </script>
+
+</body>
+</html>
