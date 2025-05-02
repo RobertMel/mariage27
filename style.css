@@ -207,3 +207,52 @@ footer img {
         align-items: center;
     }
 }
+/* Programme Page Style */
+
+main.programme {
+    font-family: 'Open Sans', sans-serif;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    color: #333;
+}
+
+.section-container h1 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #a0522d;
+}
+
+.event {
+    background-color: #fdf8f5;
+    border-left: 5px solid #a0522d;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.event:hover {
+    transform: translateY(-3px);
+}
+
+.event h2 {
+    font-size: 1.5em;
+    color: #a0522d;
+    margin-bottom: 5px;
+}
+
+.event p {
+    font-size: 1em;
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.navbar .nav-links a.active {
+    color: #a0522d;
+    font-weight: bold;
+}
