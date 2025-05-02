@@ -148,3 +148,33 @@ footer img {
         border-radius: 10px;
     }
 }
+/* Barre de navigation */
+.navbar {
+    background-color: #fdf6f0;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #b48e8e;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #d38f8f;
+}
