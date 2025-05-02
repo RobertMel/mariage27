@@ -13,19 +13,53 @@
 </head>
 
 <body>
-     <!-- Navigation principale -->
+
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soeur juliana & Y - Mariage</title>
+
+    <!-- Liens vers les polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar Responsive -->
     <nav class="navbar">
-        <ul>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#notre-histoire">Notre Histoire</a></li>
             <li><a href="#programme">Programme</a></li>
             <li><a href="#presence">Présence</a></li>
             <li><a href="#evenement">Évènement</a></li>
-            <li><a href="#cadeau">Cadeau</a></li>
             <li><a href="#theme">Thème du Mariage</a></li>
             <li><a href="#lune-de-miel">Lune de Miel</a></li>
             <li><a href="#hebergement">Hébergement</a></li>
         </ul>
     </nav>
+
+    <!-- Sections ici -->
+    <main>
+        <!-- Tes sections arrivent ici (Notre histoire, etc...) -->
+    </main>
+
+    <!-- JS intégré pour la navbar -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
+
 
     <!-- Section Save the Date -->
     <section class="save-the-date">
