@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme - Stéphanie & Axel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar simple pour navigation -->
+   <!-- Navbar -->
+   <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo"><a href="index.html">Stéphanie & Axel</a></div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="notre-histoire.html">Notre Histoire</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="presence.html">Présence</a></li>
+        <li><a href="evenement.html">Évènement</a></li>
+        <li><a href="cadeau.html">Cadeau</a></li>
+        <li><a href="theme.html">Thème</a></li>
+        <li><a href="hebergement.html">Hébergement</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+<main class="page-content">
+    <section class="presence-section">
+      <h1>Confirmez votre présence</h1>
+      <p>Merci de bien vouloir remplir ce formulaire pour nous aider à organiser cette journée inoubliable.</p>
+  
+      <form action="https://formsubmit.co/rndzonghan@gmail.com" method="POST" class="presence-form">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nouvelle confirmation de présence">
+  
+        <label for="name">Nom complet :</label>
+        <input type="text" id="name" name="Nom" required>
+  
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="Email" required>
+  
+        <label for="guests">Nombre de personnes présentes :</label>
+        <input type="number" id="guests" name="Nombre de personnes" min="1" required>
+  
+        <label for="message">Message (optionnel) :</label>
+        <textarea id="message" name="Message" rows="4"></textarea>
+  
+        <button type="submit">Envoyer ma confirmation</button>
+      </form>
+    </section>
+  </main>
+  
+    <!-- Footer -->
+    <footer>
+        <p>Stéphanie & Axel - 2025 - Avec Amour</p>
+    </footer>
+
+<!-- Script navbar mobile -->
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
+
+
+</body>
+</html>

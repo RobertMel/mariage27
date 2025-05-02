@@ -10,23 +10,22 @@
 <body>
 
     <!-- Navbar simple pour navigation -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="logo">Stéphanie & Axel</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="notre-histoire.html">Notre Histoire</a></li>
-                <li><a href="programme.html" class="active">Programme</a></li>
-                <li><a href="presence.html">Présence</a></li>
-                <li><a href="evenement.html">Évènement</a></li>
-                <li><a href="cadeau.html">Cadeau</a></li>
-                <li><a href="theme.html">Thème</a></li>
-                <li><a href="lune-de-miel.html">Lune de Miel</a></li>
-                <li><a href="hebergement.html">Hébergement</a></li>
-            </ul>
-        </div>
-    </nav>
-
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo"><a href="index.html">Stéphanie & Axel</a></div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="notre-histoire.html">Notre Histoire</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="presence.html">Présence</a></li>
+        <li><a href="evenement.html">Évènement</a></li>
+        <li><a href="cadeau.html">Cadeau</a></li>
+        <li><a href="theme.html">Thème</a></li>
+        <li><a href="hebergement.html">Hébergement</a></li>
+      </ul>
+    </div>
+  </nav>
     <!-- Contenu principal -->
     <main class="programme">
         <section class="section-container">
@@ -37,7 +36,9 @@
                 <p><strong>Hôtel de Ville d’Arras – 4 Place des Héros</strong></p>
                 <p>Nous échangerons nos vœux dans ce lieu emblématique chargé d’histoire.</p>
             </div>
-            <img class="event-photo" src="images/Capture d’écran 2025-05-02 à 18.30.17.png" alt="Célébration civile">
+            <img class="event-photo" src="images/Capture d’écran 2025-05-02 à 18.30.17.png" height="300" width="300" style="margin-right: 230px;" alt="Célébration civile">
+            <img class="event-photo" src="images/mairieinterieur.png" height="300" width="300" style="margin:auto;">
+
     
             <div class="event">
                 <h2>16h15 – Ouverture du vin d’honneur</h2>
@@ -58,7 +59,7 @@
                 <p><strong>Domaine de la Cendrée</strong></p>
                 <p>Entre mets raffinés et ambiance chaleureuse, la soirée s’annonce inoubliable.</p>
             </div>
-            <img class="event-photo" src="images/photo4.jpg" alt="Soirée festive">
+            <img class="event-photo" src="images/repasfestif.png" height="230" width="230" alt="Soirée festive">
         </section>
     </main>
     
@@ -67,6 +68,18 @@
     <footer>
         <p>Stéphanie & Axel - 2025 - Avec Amour</p>
     </footer>
+
+<!-- Script navbar mobile -->
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
+
 
 </body>
 </html>

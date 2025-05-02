@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thème du Mariage - Stéphanie & Axel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo"><a href="index.html">Stéphanie & Axel</a></div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="notre-histoire.html">Notre Histoire</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="presence.html">Présence</a></li>
+        <li><a href="evenement.html">Évènement</a></li>
+        <li><a href="cadeau.html">Cadeau</a></li>
+        <li><a href="theme.html" class="active">Thème</a></li>
+        <li><a href="hebergement.html">Hébergement</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main class="page-content">
+    <section class="theme-section">
+      <h1>Thème du Mariage</h1>
+      <div class="theme-text">
+        <p>Inutile de chercher un thème : ce mariage portera les couleurs de vos sourires. Venez tels que vous êtes…</p>
+        <p>Aucun thème, aucun dress code, aucune exigence.<br>
+        Pas de couleurs imposées, ni de tenues dictées.</p>
+        <p>Nous vous invitons à venir comme vous êtes, avec ce qui vous rend unique :<br>
+        vos sourires, votre élégance naturelle, votre bonne humeur.</p>
+        <p>Car le plus beau des thèmes, c’est vous.<br>
+        C’est votre présence, simple et sincère,<br>
+        qui habillera cette journée de mille éclats et rendra ce moment inoubliable.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Stéphanie & Axel - 2025 - Avec Amour</p>
+    <img src="images/Capture d’écran 2025-04-30 à 20.52.18.png" alt="Logo Nid d'Hirondelle" />
+  </footer>
+
+  <!-- Script navbar mobile -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
