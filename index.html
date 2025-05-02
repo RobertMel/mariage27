@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>soeur juliana & Y - Mariage</title>
+    <title>sStéphanie & Axel</title>
 
     <!-- Liens vers les polices -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -14,52 +14,35 @@
 
 <body>
 
-    <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>soeur juliana & Y - Mariage</title>
-
-    <!-- Liens vers les polices -->
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Navbar Responsive -->
+    <!-- NAVBAR repliable -->
     <nav class="navbar">
-        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <div class="navbar-container">
+            <div class="logo">Stéphanie & Axel</div>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        </div>
         <ul class="nav-links" id="nav-links">
             <li><a href="#notre-histoire">Notre Histoire</a></li>
             <li><a href="#programme">Programme</a></li>
             <li><a href="#presence">Présence</a></li>
             <li><a href="#evenement">Évènement</a></li>
+            <li><a href="#cadeau">Cadeau</a></li>
             <li><a href="#theme">Thème du Mariage</a></li>
             <li><a href="#lune-de-miel">Lune de Miel</a></li>
             <li><a href="#hebergement">Hébergement</a></li>
         </ul>
     </nav>
 
-    <!-- Sections ici -->
-    <main>
-        <!-- Tes sections arrivent ici (Notre histoire, etc...) -->
-    </main>
+    <!-- Ton contenu ici -->
 
-    <!-- JS intégré pour la navbar -->
+    <!-- JS pour ouvrir/fermer le menu -->
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-links');
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
         });
     </script>
-
-</body>
-</html>
-
 
     <!-- Section Save the Date -->
     <section class="save-the-date">
@@ -127,7 +110,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>Nid d'Hirondelle - BeNie 2025 - Avec Amour</p>
+        <p>Stéphanie & Axel - 2025 - Avec Amour</p>
         <img src="Capture d’écran 2025-04-30 à 20.52.18.png" alt="Logo Nid d'Hirondelle">
     </footer>
 

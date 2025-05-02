@@ -148,72 +148,62 @@ footer img {
         border-radius: 10px;
     }
 }
-/* ----- Barre de navigation ----- */
+/* NAVBAR STYLE */
 .navbar {
-    background-color: #fdf6f0;
-    padding: 1rem;
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.navbar-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar li {
-    display: inline;
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #a67856;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #b48e8e;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #d48b8b;
-}
-
-/* Bouton menu hamburger */
 .menu-toggle {
-    display: none;
+    font-size: 2rem;
     background: none;
     border: none;
-    font-size: 2rem;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
     cursor: pointer;
-    color: #b48e8e;
 }
 
-/* Responsive mobile */
-@media (max-width: 768px) {
-    .navbar ul {
-        display: none;
-        flex-direction: column;
+/* Liens de navigation */
+.nav-links {
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+/* Pour les grands écrans : menu toujours replié, mais full width si activé */
+@media (min-width: 769px) {
+    .nav-links {
         align-items: center;
-        background-color: #fdf6f0;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 10;
-    }
-
-    .navbar ul.show {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
     }
 }
