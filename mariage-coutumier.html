@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mariage Coutumier - Stéphanie & Axel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVBAR repliable -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Stéphanie & Axel</div>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="notre-histoire.html">Notre Histoire</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="presence.html">Présence</a></li>
+            <li><a href="evenement.html">Évènement</a></li>
+            <li><a href="cadeau.html">Cadeau</a></li>
+            <li><a href="theme.html">Thème du Mariage</a></li>
+            <li><a href="hebergement.html">Hébergement</a></li>
+            <li><a href="mariage-coutumier.html">Mariage coutumier</a></li>
+        </ul>
+    </nav>
+
+    <img src="images/photomariagecoutumier.png" width="1700" height="400">
+
+  <main class="page-content">
+    <section class="coutumier-section">
+      <h1>Mariage Coutumier</h1>
+      <p class="citation">“L’arbre ne tient debout que par ses racines”</p>
+      <p class="intro">Stéphanie & Axel ont la joie de vous convier à leur mariage coutumier</p>
+      <p><strong>Le 02 août 2025</strong></p>
+      <p><strong>Lieu :</strong> Chez Eya’a Minko Fidèle, Carrefour Gigi, derrière Pétro Gabon (Libreville)</p>
+
+ <img src="images/photo2aout.png" width="400" height="300" style="margin-left: 200px;" alt="">
+
+      <p>Nous avons l’immense bonheur de vous inviter à célébrer avec nous notre mariage coutumier, le <strong>2 août 2025</strong>, au domicile familial Eya’a Minko Fidèle, Carrefour Gigi, derrière Pétro Gabon, à Libreville.</p>
+      <p>De 11h à 20h, nous aimerions partager avec vous une journée de traditions, de rires et d’amour.</p>
+
+      <p>De ce fait, c’est entourés de nos familles et de nos proches que nous souhaitons honorer les coutumes qui ont toujours façonné nos vies.</p>
+      <p>Parce qu’un mariage coutumier n’est pas seulement l’union de deux êtres, mais celle de deux familles, de deux histoires, et de deux lignées qui s’entrelacent.</p>
+      <p>Nous serions profondément honorés de vous compter parmi nous pour célébrer ensemble ce chapitre d’amour, au cœur des traditions gabonaises.</p>
+
+     
+
+      <h2>Informations pratiques</h2>
+      <h3>“Pagne du mariage”</h3>
+      <img src="images/pagnes.png" style="margin-left:200px ;" width="450" height="450" alt="" srcset="">
+      <p>Symbole d’unité et de partage, nos pagnes ont été choisis avec soin pour accompagner cette belle journée.</p>
+      <ul>
+        <li>Prix : 5 000 FCFA l’unité</li>
+        <li>Quantité disponible : 100 pagnes (répartis équitablement entre les deux familles)</li>
+      </ul>
+
+      <p><strong>Où le récupérer ?</strong></p>
+      <ul>
+        <li>Chez Sophia Tella, au Charbonnage Bel Air – <a href="tel:+24166206778">+241 66 20 67 78</a></li>
+        <li>Chez Maman Adèle, à Nzeng Ayong, vers l’Université – <a href="tel:+24107328551">+241 07 32 85 51</a></li>
+      </ul>
+
+      <p><strong>Important :</strong> Pour ceux qui achèteront directement auprès de la vendeuse Sophia Tella, ce pagne est strictement réservé aux invités de notre mariage. Merci de préciser clairement qu’il s’agit du mariage de Stéphanie & Axel au moment de l’achat. Sans cette mention, le pagne ne pourra pas vous être remis.</p>
+    </section>
+  </main>
+
+  <!--<h2>Confirmation de présence</h2>
+  <p class="citation">« Lorsqu’un arbre s’enracine, c’est toute la forêt qui le protège. »</p>
+  <p>Merci de confirmer votre présence en cliquant ici : </p> -->
+
+
+   <section class="presence-section">
+    <h1>Confirmez votre présence</h1>
+    <p class="intro">
+      Merci de nous confirmer votre présence à cette journée unique. Cela nous aidera à mieux organiser ce moment avec vous.
+    </p>
+  
+    <form action="https://formsubmit.co/ton@email.com" method="POST" class="presence-form">
+      <label for="nom">Nom complet</label>
+      <input type="text" id="nom" name="Nom" required placeholder="" />
+  
+      <label for="email">Adresse email</label>
+      <input type="email" id="email" name="Email" required placeholder="Ex : google@mail.com" />
+  
+      <label for="nb_personnes">Nombre de personnes présentes</label>
+      <input type="number" id="nb_personnes" name="Nombre de personnes" required min="1" />
+  
+      <label for="message">Message (facultatif)</label>
+      <textarea id="message" name="Message" placeholder="Un mot doux, une précision ?"></textarea>
+  
+      <!-- Anti-spam -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="merci.html">
+  
+      <button type="submit">Je confirme ma présence</button>
+    </form>
+  </section>
+
+   <!-- Footer -->
+   <footer>
+    <p>Stéphanie & Axel - 2025 - Avec Amour</p>
+    <img src="images/Capture d’écran 2025-04-30 à 20.52.18.png" alt="Logo Nid d'Hirondelle">
+</footer>
+ <!-- Script navbar mobile -->
+ <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

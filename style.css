@@ -451,4 +451,49 @@ main.programme {
     line-height: 1.6;
     text-align: justify;
   }
+  /* Section mariage coutumier */
+.coutumier-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fdfaf6; /* fond crème doux */
+    color: #3e2f1c; /* brun doux pour le texte */
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+  }
   
+  .coutumier-section h1,
+  .coutumier-section h2,
+  .coutumier-section h3 {
+    font-family: 'Great Vibes', cursive;
+    color: #9e7b4f; /* or mat/doré */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .coutumier-section .citation {
+    font-style: italic;
+    color: #7a5c3b;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .coutumier-section p,
+  .coutumier-section ul {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  
+  .coutumier-section ul {
+    padding-left: 20px;
+  }
+  
+  .coutumier-section a {
+    color: #9e7b4f;
+    text-decoration: underline;
+  }
+  
+  .coutumier-section a:hover {
+    text-decoration: none;
+    color: #6e4a2f;
+  }
