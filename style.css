@@ -497,3 +497,79 @@ main.programme {
     text-decoration: none;
     color: #6e4a2f;
   }
+/* --------- Responsive Design --------- */
+
+@media screen and (max-width: 1024px) {
+    .coutumier-section img,
+    .presence-form input,
+    .presence-form textarea,
+    .presence-form button {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0 !important;
+    }
+  
+    .coutumier-section img {
+      display: block;
+      margin: 1rem auto;
+      height: auto;
+    }
+  
+    .presence-section {
+      margin: 2rem 1rem;
+      padding: 1.5rem;
+    }
+  
+    .presence-section h1 {
+      font-size: 2rem;
+    }
+  
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-toggle {
+      align-self: flex-end;
+      font-size: 1.5rem;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 1rem;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 0.5rem 1rem;
+    }
+  
+    .page-content {
+      padding: 1rem;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    footer img {
+      max-width: 120px;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+    }
+  
+    img[width="1700"][height="400"] {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+  
