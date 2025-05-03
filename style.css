@@ -83,10 +83,10 @@ body {
 
 blockquote {
     font-family: 'Great Vibes', cursive;
-    font-size: 1.8rem;
+    font-size:3em;
     color: #b77b7b;
     margin: 0 auto;
-    max-width: 600px;
+    max-width:600px;
 }
 
 /* Section Contact */
