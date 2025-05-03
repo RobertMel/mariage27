@@ -941,3 +941,10 @@ main.evenement p {
     font-size: 1rem;
   }
 }
+.airtel-logo {
+  display: block;
+  margin: 2rem auto;
+  width: 200px;
+  height: auto;
+  max-width: 90%;
+}
