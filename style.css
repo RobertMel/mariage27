@@ -948,3 +948,11 @@ main.evenement p {
   height: auto;
   max-width: 90%;
 }
+
+.save-the-date {
+  display: block;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+}
