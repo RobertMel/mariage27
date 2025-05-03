@@ -411,7 +411,7 @@ main.programme {
   
   .presentation blockquote p {
     margin-bottom: 1.2rem;
-    font-size: 1.05rem;
+    font-size: 1.75rem;
   }
   
   @media (max-width: 768px) {
@@ -851,6 +851,93 @@ main.evenement p {
   }
 
   main.evenement p {
+    font-size: 1rem;
+  }
+}
+.cotisation-section {
+  background-color: #fef7f0;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.cotisation-section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #b36b00;
+}
+
+.cotisation-section blockquote {
+  font-style: italic;
+  margin-bottom: 1rem;
+  border-left: 4px solid #b36b00;
+  padding-left: 1rem;
+  color: #444;
+}
+
+.cotisation-section ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+  list-style-type: none;
+}
+
+.cotisation-section ul li::before {
+  content: "• ";
+  color: #b36b00;
+}
+.cotisation-section {
+  background-color: #fef7f0;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.cotisation-section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #b36b00;
+}
+
+.cotisation-section blockquote {
+  font-style: italic;
+  margin-bottom: 1rem;
+  padding-left: 0;
+  border-left: none;
+  color: #444;
+  font-size: 2.1rem;
+}
+
+.cotisation-section ul {
+  margin: 1rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.cotisation-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.cotisation-section ul li::before {
+  content: "• ";
+  color: #b36b00;
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .cotisation-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .cotisation-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .cotisation-section blockquote {
     font-size: 1rem;
   }
 }
