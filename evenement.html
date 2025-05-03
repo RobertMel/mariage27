@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Évènement - Stéphanie & Axel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-container">
+        <div class="logo"> <a href="index.html">Stéphanie & Axel</a></div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="notre-histoire.html">Notre Histoire</a></li>
+      <li><a href="programme.html">Programme</a></li>
+      <li><a href="presence.html">Présence</a></li>
+      <li><a href="evenement.html">Évènement</a></li>
+      <li><a href="cadeau.html">Cadeau</a></li>
+      <li><a href="theme.html">Thème du Mariage</a></li>
+      <li><a href="hebergement.html">Hébergement</a></li>
+      <li><a href="mariage-coutumier.html">Mariage coutumier</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main class="evenement">
+    <h1>✨ Le Domaine de la Cendrée & Dupont Traiteur ✨</h1>
+    <p>Pour sublimer notre mariage, nous avons choisi de faire confiance à deux partenaires d'exception : <strong>le Domaine de la Cendrée</strong> et <strong>Dupont Traiteur</strong>.</p>
+    
+    <p>Nichée dans un cadre verdoyant et paisible, la salle du Domaine de la Cendrée mêle avec charme l'authenticité des pierres anciennes et la chaleur des poutres apparentes. Entièrement rénové pour conjuguer confort moderne et cachet d'antan, ce lieu enchanteur sera le théâtre de notre plus beau jour.</p>
+    
+    <p>Un écrin de nature et de lumière, parfait pour partager avec vous des moments d'émotion et de joie.</p>
+
+    <p>Pour régaler vos papilles, nous avons choisi <strong>Dupont Traiteur</strong>, une maison forte de plus de 50 ans de savoir-faire, animée par la passion de la cuisine et l'amour du métier.</p>
+
+    <p>Produits frais, de saison, issus le plus souvent de producteurs locaux, cuisine inventive et service raffiné : tout a été pensé pour vous offrir une expérience culinaire inoubliable.</p>
+
+    <p>À l'écoute, réactive et enthousiaste, l'équipe de Dupont Traiteur saura vous faire découvrir un buffet délicat et des mets gastronomiques qui marqueront vos souvenirs.</p>
+
+    <p>Avec ce lieu d’exception et ce traiteur de talent, nous souhaitons vous offrir une journée magique, placée sous le signe de la <strong>convivialité</strong>, de l'<strong>élégance</strong>... et de la <strong>gourmandise</strong> !</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Stéphanie & Axel - 2025 - Avec Amour</p>
+  </footer>
+
+  <!-- Script navbar mobile -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
