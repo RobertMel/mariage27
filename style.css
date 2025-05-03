@@ -572,4 +572,78 @@ main.programme {
       height: auto !important;
     }
   }
+  /* Mobile First */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .programme .section-container {
+    padding: 20px;
+  }
+  
+  .event {
+    margin-bottom: 40px;
+  }
+  
+  .event-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  /* Nav responsive */
+  .navbar {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+  
+  /* Responsive >768px : affiche la navbar en ligne */
+  @media screen and (min-width: 768px) {
+    .nav-links {
+      display: flex !important;
+      flex-direction: row;
+    }
+  
+    .nav-links li {
+      margin: 0 15px;
+    }
+  
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
+  /* Responsive images côte à côte si possible sur grands écrans */
+  @media screen and (min-width: 768px) {
+    .event-photo {
+      display: inline-block;
+      margin: 10px;
+      vertical-align: top;
+    }
+  }
   
