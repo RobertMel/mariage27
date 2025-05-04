@@ -956,3 +956,45 @@ main.evenement p {
   max-width: 800px;
   height: auto;
 }
+.hebergements {
+  padding: 60px 20px;
+  background-color: #fffdfc;
+}
+
+.hebergements h2, .hebergements h3 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #8b4c39;
+  margin-bottom: 20px;
+}
+
+.hebergements .intro,
+.hebergements .conseil {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.hotel-list {
+  list-style: none;
+  padding-left: 0;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.hotel-list li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+.hotel-list a {
+  color: #af5c4c;
+  text-decoration: none;
+}
+
+.hotel-list a:hover {
+  text-decoration: underline;
+}
